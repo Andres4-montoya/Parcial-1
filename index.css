@@ -1,60 +1,262 @@
-*{
-    padding: o;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-    width: 100vw;
+* {
+    margin: 0; /*Se reinicia el margin de todos los elementos a 0 */
+    padding: 0; /*Se reinicia el padding de todos los elementos a 0 */
+    box-sizing: border-box; /*El width del elemento se calcula tomando en cuenta el padding y el border*/
+    font-family: Arial, Helvetica, sans-serif; /*Se define el font family para todos los elementos como Arial (Puede ser otro diferente) */
+    scroll-behavior: smooth;
 }
 
-.header{
-    position: fixed;
+:root {
+  --color-letra: white; /*Variable que puede ser usada en cualquier parte del archivo con la función var() */
+}
+
+body {
+   width: 100vw;
+}
+
+.header {
+    position: fixed; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
     top: 0;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between; /* Los elementos del contenedor se envian hacia los lados */
     align-items: center;
-    background-color: orange;
-    padding: 0 0.5rem 0 2rem;
-    height: 10%;
+    background-color: var(--background-principal);
+    padding: 0 0.5rem 0 2rem; /*TOP: 0px RIGHT: 8px BOTTOM: 0px LEFT: 32px*/
+   background-color:lightblue;;
 }
-.header .navbar{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- height: 100%;
- width: 100%;
- padding: 1rem;
- background-color: beige;
+.header .cavezera{
+   display: flex; 
+   width: 50%;
+   height: 5%;
+   position: absolute;
+}   
+
+.beemo{
+    height:50%;
+    width: 15%;
+}
+.header h1 {
+    color: var(--color-letra)
 }
 
-.navbar .botones{
-display: flex;
-align-items: center;
-justify-content: space-around;
-width: 50%;
-height: 50%;
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    height: 100%;
+    width: 20vw;
+    padding: 1rem;
+    background-color: var(--background-principal);
+}   
+
+.navbar a button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  lightblue;
+  border-radius: 10%;
 
 }
-.botones .imgboton{
-width: 20%;
 
-height: 100%;
+
+.link img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     
-    }   
+  justify-items: flex-end;
+}
+
+ .link .img{
+  
+    height: 100%;
+}
+
+.link:hover {
+    box-shadow: 0 0 2rem rgb(1, 99, 190);
+    cursor: pointer; /* el puntero se convierte en una manito */
+}
+
+section {
+    display: flex;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+    background-color: lightblue;
+}
+
+.contenedor-texto {
+    width: 50%;
+    color: var(--color-letra);
+}
+
+.contenedor-texto h2 {
+    font-size: 5rem;
+    font-weight: 500; /*Que tanta negrilla se quiere*/
+}
+.contenedor-texto p{
+    font-size: 1.5rem;
+    font-weight: 500; /*Que tanta negrilla se quiere*/
+}
+
+.seccion-uno img {
+    border-radius: 30%;
+    height: 50%;
+    border: 5px solid black;
+}
+.flotante {
+        position:fixed;
+        bottom:0px;
+        right:0px;
+     
+}
+ .flotante .whats{
+    height: 50px;
+    width: 50px;
+}
+
 
 
   
- .logo{
-    width: 30%;
+
+  
+  .contenedor-principal {
+    position: relative;
+    display: flex;
+    border: 2px solid black;
+    width: 35%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.contenedor-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45%;
+    background-color: rgb(0, 110, 255);
+    border-radius: 2rem 2rem 0 0;
+}
+
+.image-perfil {
     height: 100%;
+    width: 100%;
+}
+
+.contenedor-imagen {
+    position: relative;
+    border: 5px solid  rgb(0, 110, 255);
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.seccion-dos{
+  display:inline-block;
+  align-items: center;
+  justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+;
+  
 
 }
-.botones{
-display: flex;
-justify-content: center;
-align-items: center;
+.seccion-dos h1
+    {
+        color: var(--color-letra);
+        font-size: 5rem;
+        text-align: center;
+    
+    }
+article{
+    display:flex;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    background-color: lightblue;
+    width: 100vw;
+   height: 100vh;
+   padding-bottom: 12%;
+}
+
+.card{
+    height:100%;
+    width: 100%;
+    border: 1px solid  rgb(0, 110, 255); 
+    background-color: aliceblue;
+    justify-content: space-around;
+
+    
+}
+ .card-body{
+    border: 1px solid  rgb(0, 110, 255);
 
 }
+.card-title{
+    font-size: 2rem;
+    text-align: center;
+}
+ .card img{
+
+    width: 100%;
+    height:100%;
+    
+}
+
+.seccion-tres{
+  display:flex;
+  height: 100vh;
+  width: 100vw;
+}
+.Colaboradores{
+    display: flex;
+
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    
+    
+}
+.seccion-tres h1{
+    color: var(--color-letra);
+        font-size: 5rem;
+        text-align: center;
+}
+
+footer{
+    
+
+    position: absolute; /*El elemento es fijado al viewport, es decir que si se hace scroll, el elmento seguirá en la posición fijada*/
+     width: 100vw;
+    background-color: lightblue;
+   
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+header a:link {text-decoration: none }
+header a:visited {color: black;  font-family: arial; text-decoration: none }
+header a:hover { color: black; font-family: arial; text-decoration: none }
+*{outline:none !important;}*:focus {outline: none !important;}textarea:focus, input:focus{outline: none !important;}	a{text-decoration: none !important;outline: none !important;}
+
+ 
