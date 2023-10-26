@@ -27,26 +27,17 @@ function crearModal(){
 
 
 const dataServicios = [
-    { imgurl:"img/beemo.png", titulo:" BMO", descripcion:`BMO se caracteriza por ser un robot leal, confiable y útil 
-    que protege a Finn y Jake. Afirmó que él no tiene sentimientos, pero Donny lo hace
-     enojar por tirar y romper su controlador. En el episodio Ser Más se revela que BMO
-      es un MO creado por Moe para cuidar de su hijo, pero ya que nunca tuvo un hijo, lo
-       envió hacia el mundo en solitario, con la esperanza de que pudiese encontrar una
-        familia propia, tal vez hasta encontrar alguien a quien cuidar, debido a esto se
-         muestra que BMO es muy cariñoso y protector con Finn.`,
+    { imgurl:"img/beemo.png", titulo:" BMO", descripcion:`BMO se caracteriza por ser un robot leal, confiable 
+    y útil que protege a Finn y Jake. Afirmó que él no tiene sentimientos, pero Donny lo hace enojar por tirar
+     y romper su controlador.`,
         vermas:"https://horadeaventura.fandom.com/es/wiki/BMO?so=search"},
     {imgurl:"img/Finn.png", titulo:"Finn",descripcion:`Muchas veces se comporta de manera sorpresiva y violenta, pero
     a veces Finn es un chico valiente y muy justo. Posee un fuerte sentido de la 
     responsabilidad y se molesta cuando no logra ayudar a los que lo necesitan.
-     Es incapaz de hacer cualquier cosa malvada o injusta ya que no es lo correcto.
-      Su comportamiento es el de un niño pero cuando trata con mujeres, actúa de manera
-       caballerosa. Es muy sensible y tierno, cuando está enamorado no sabe como actuar 
-       con las chicas y demuestra sus sentimientos.`, vermas:"https://horadeaventura.fandom.com/es/wiki/Finn?so=search"},
+    `, vermas:"https://horadeaventura.fandom.com/es/wiki/Finn?so=search"},
     {imgurl:"img/jake.png", titulo:"Jake",descripcion:`Jake es generalmente tranquilo y tiende a no preocuparse por las
     cosas. Él se apoya en gran medida de sus poderes elásticos (o Finn) al sacarlo de
-     cualquier situación peligrosa que se mete a menudo. A menudo se hacen bromas, 
-     a veces graves, pero si Finn está de acuerdo con Jake y tiene siempre una idea o 
-     una canción para levantar el ánimo`, vermas:"https://horadeaventura.fandom.com/es/wiki/Jake?so=search"},
+     cualquier situación peligrosa que se mete a menudo.`, vermas:"https://horadeaventura.fandom.com/es/wiki/Jake?so=search"},
     {imgurl:"img/princesa.png", titulo:"Dulce princesa",descripcion:`La Dulce Princesa ama a la mayoría de sus súbditos, y ha sido
     conocida por su defensa incansable cuando hay problemas en el Reino. En La Princesa 
     Galleta, su dedicación a su reino se muestra cuando visita el Dulce Orfanato y 

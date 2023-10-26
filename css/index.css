@@ -19,7 +19,8 @@
         align-items: center;
 
         padding: 0 0.5rem 0 2rem; /*TOP: 0px RIGHT: 8px BOTTOM: 0px LEFT: 32px*/
-      background-color:lightblue;;
+      background: color lightblue ;
+      
     
     }
     .header .cabezera{
@@ -34,11 +35,12 @@
         flex-direction: row;
         justify-content: space-between; /* Se le da un margen igual a cada elemento del contenedor */
         align-items: center;
-        height: 100%;
+        height: 80%;
         width: 25vw;
 
     }  
     ul{list-style: none;}
+
     .navbar li {
         margin-right: 10%;
         border-color: none;
@@ -49,20 +51,52 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        height: 5vh;
+        height: 4vh;
         align-items: center;
         justify-content: space-around;
         background-color:  lightblue;
       border-radius: 10%;
+      font-size: 10px;
       
 
     }
+    
+    
     .navbar2
-    { display: flex;
+    {  display: none;
         align-items: center;
         justify-content: space-around;
-        height: 20%;
-        width: 100%;}
+        height: 10%;
+        width: 100%;
+        margin-right: 0;
+      
+    }
+
+    header button{
+      display: flex;
+      justify-items: center;
+      align-items:center;
+
+    }
+   
+    .link{ 
+      display: flex;
+  flex-direction: row;
+      width: 8vh;
+      height: 4vh;
+      font-size: 10px;
+      align-items: center;
+      justify-items: center;
+      background-color:  lightblue;
+      
+    }
+      
+     .vermas:hover
+      {
+        box-shadow: 0 0 2rem rgb(1, 99, 190);
+        cursor: pointer; /* el puntero se convierte en una manito */
+    }
+     
 
         
 
@@ -75,11 +109,12 @@
 
 
     .beemo{
-        height:20%;
+        height:15%;
         width: 10%;
     }
     .header h1 {
-        color: var(--color-letra)
+        color: var(--color-letra);
+        font-size: 1rem;
     }
 
 
@@ -110,11 +145,11 @@
 
     .contenedor-texto h2 {
         margin-top: 10%;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 500;
     }
     .contenedor-texto p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 500; 
     }
 
@@ -139,14 +174,14 @@
     }
 
     #seccion-dos{
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       width: 100vw;
-      gap: 3rem;
-      padding: 4rem;
+     
+    
     }
 
     .contenedor-servicios{   
@@ -172,12 +207,6 @@
       border-radius: 1rem;
     }
 
-    .card img{
-      
-      width: 100%;
-      height:50%;
-      
-    }
 
     .card{
       height: 40%;
@@ -186,24 +215,33 @@
       background-color: lightblue;
       justify-content: space-around; 
       align-items: center;
+      padding: 1rem;
+      font-size: 13px;
+  
+    }
+    
+    .card img{
       
+      width: 50%;
+      height:70%;
+    align-items: center;
+    margin-left:30% ;
       
 
-      
     }
     .card-body{
       height: 100%;
-    padding-right: 10%;
+
     background-color: lightblue;
 
     }
     .card-title{
-      font-size: 2rem;
-      text-align: center;
+      font-size: 1rem;
+     
     }
 
     #seccion-tres{
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -272,6 +310,20 @@
         font-weight: 100; 
     }
 
+    footer{
+        
+      position: absolute; 
+      width: 100vw;
+      background-color: lightblue;
+      
+    }
+    .footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      
+  }
     /*
     .wrapper {
       width: 100%;
@@ -419,18 +471,5 @@
       font-size: 4rem;
       font-weight: 100; 
     }
-    footer{
-        
-        position: absolute; 
-        width: 100vw;
-        background-color: lightblue;
-        
-      }
-      .footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        
-    }
+    
     */
